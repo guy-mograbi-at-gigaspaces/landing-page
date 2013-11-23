@@ -1,0 +1,152 @@
+<div class="header">
+    <div class="content">
+        <div class="logo">
+
+        </div>
+        <div class="links">
+            <a href="http://www.gigaspaces.com/xap-in-memory-computing-event-processing/Meet-XAP">XAP</a>
+            <a href="http://www.gigaspaces.com/cloudify-devops-cloud-application-management/meet-cloudify">Cloudify</a>
+            <a href="http://www.gigaspaces.com/about">Gigaspaces</a>
+        </div>
+    </div>
+</div>
+<div class="post background content">
+    <div class="post-head-links">
+        <a class="right-link" ng-href="" ng-click="goTo('contact-us')">Sounds Interesting</a>
+    </div>
+    <div class="hr">
+
+    </div>
+    <div class="job">
+        <div class="h1-title">
+            Full Stack Web Developer/Super hero
+        </div>
+        <div class="subtitle">
+            <a href="http://www.gigaspaces.com/about" class="strong">Gigaspaces</a> Herzeliya Pituach, Israel
+        </div>
+        <div class="labels">
+            <ul>
+                <li ng-repeat="item in ['Node', 'Anglar','D3','Play!Framework 2','Mongo','Sass']">{{item}}</li>
+            </ul>
+        </div>
+        <div class="h2-title">
+            About the position
+        </div>
+        <div class="post-text">
+            <p>
+                If you are energetic, spirited developer with passion for JavaScript, GigaSpaces' UI team has a lot to offer to you.<br/>
+                We have an open position in a work environment that is stress free while at the same time fast paced.<br/>
+                Dealing with cutting edge technologies within a supporting environment such as in GigaSpaces,<br/>
+                self taught and self directing workers will thrive.<br/>
+            </p>
+        </div>
+        <div class="h2-title">
+            Requirements
+        </div>
+        <div class="post-text">
+            <p>
+                <span class="strong">Required super powers</span>
+                <ul>
+                    <li>Passion for development in general with a soft spot for UI</li>
+                    <li>Targeted thinking</li>
+                    <li>Web architecture knowledge</li>
+                    <li>Big picture vision</li>
+                    <li>Excellent communication skills</li>
+                </ul>
+            </p>
+            <p>
+                <span class="strong">Alter ego qualities</span>
+                <ul>
+                    <li>Web design skills</li>
+                    <li>Build process knowledge</li>
+                    <li>Self made online projects</li>
+                </ul>
+            </p>
+            <p>
+                Experience in our stack is a plus, but not required.
+            </p>
+        </div>
+        <div class="h2-title">
+            About GigaSpaces
+        </div>
+        <div class="post-text">
+            <p>
+                GigaSpaces Technologies is a leading company in the Big Data and Cloud world.<br/>
+                We believe in open source projects and we help build communities to support them.<br/>
+            </p>
+            <p>
+                We take ideas such as DevOps and Agile seriously and invest in our RnD continuously,<br/>
+                Even though we have been around for a while, we are still just starting.<br/>
+            </p>
+            <p>
+
+            </p>
+        </div>
+
+        <div class="work-with">
+            <div class="h2-title">
+                Who you'll work with
+            </div>
+            <div class="profile-photos clearfix">
+                <ul>
+                    <li title="{{profile.name}}" ng-repeat="profile in profiles"><img src="http://www.gravatar.com/avatar/{{profile.icon}}"></img></li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="contact-us " >
+         <div class="h1-title">Tell us about yourself</div>
+        <form class="form-horizontal">
+            <a id="contact-us"></a>
+
+            <span class="form-group">
+                <label class="col-sm-2 control-label">Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" ng-model="submit.name"/><br/>
+                </div>
+            </span>
+            <span class="form-group">
+                <label class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" ng-model="submit.email"/>
+                </div>
+            </span>
+            <span class="form-group">
+                <label class="col-sm-2 control-label">Phone</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" ng-model="submit.phone"/>
+                </div>
+            </span>
+            <span class="form-group">
+                <label class="col-sm-2 control-label">Recommendations Details</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" ng-model="submit.recommendations"></textarea>
+                </div>
+            </span>
+            <span class="form-group" ng-class="{'has-error':!!errors.file}">
+                <label class="col-sm-2 control-label">Resume<span ng-show="!!errors.file">- {{errors.file}}</span></label>
+                <div class="col-sm-10">
+                    <input type="file" class="form-control" ng-file-select="onFileSelect($files)">
+                </div>
+            </span>
+            <span class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn from-control" ng-click="submitForm()">Submit</button>
+                </div>
+            </span>
+
+
+        </form>
+    </div>
+</div>
+
+
+        <div class="footer">
+            <div class="content">
+                <div class="logo"></div>
+                <div class="disclaimer">&#169; GigaSpaces</div>
+            </div>
+        </div>
+

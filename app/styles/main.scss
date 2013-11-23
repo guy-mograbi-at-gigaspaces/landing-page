@@ -1,0 +1,194 @@
+@import "bootstrap-sass/lib/bootstrap";
+
+$BLUE:#007FC9;
+$BLUE_SOFT:#86C0E2;
+$ORANGE:#F67A09;
+$ORANGE_SOFT:#F8E7D0;
+$H1_TITLE_COLOR:$ORANGE;
+$LABEL_BACKGROUND:$ORANGE_SOFT;
+$LABEL_COLOR:$BLUE_SOFT;
+
+/* Put your CSS here */
+html, body {
+  margin: 0;
+  padding:0;
+}
+
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+.content{
+  width:900px;
+  margin:auto;
+}
+
+.background{
+  background: white;
+}
+
+.header{
+  height:100px;
+  padding-top:40px;
+  .logo{
+    float:left;
+  }
+  .links{
+    a{
+      color:white;
+      &:hover{
+        background:$ORANGE;
+        color:$BLUE;
+        text-decoration: none;
+      }
+      float:right;
+      padding:10px 20px;
+      margin-left:20px;
+      background: $BLUE;
+    }
+  }
+}
+
+
+
+.h1-title{
+  font-size:30px;
+  color: $H1_TITLE_COLOR;
+  line-height:45px;
+}
+
+.h2-title{
+  font-size:25px;
+  color: $H1_TITLE_COLOR;
+  line-height: 40px;
+}
+
+.hr{
+  height:1px;
+  background:#CECECE;
+  width:100%;
+}
+
+.strong{
+  font-weight: bold;
+}
+.post{
+  padding:30px;
+  p{
+    margin-left:20px;
+    margin-top:20px;
+  }
+  .post-head-links{
+    height:35px;
+
+    .right-link{
+      float:right;
+      padding-right:20px;
+      &:after{
+        position:absolute;
+        margin-top:5px;
+        color:$ORANGE;
+        display:inline-block;
+        content:"";
+        height:0;
+        width:0;
+        border-width: 10px;
+        border-left-color:transparent;
+        border-top-color:$ORANGE;
+        border-bottom-color:transparent;
+        border-right-color:transparent;
+        border-style: solid;
+
+      }
+    }
+  }
+
+  .job{
+    .subtitle{
+      font-style: italic;
+    }
+  }
+
+  .labels{
+    height:40px;
+    ul{
+      list-style: none;
+      margin:20px;
+      padding:0;
+      li{
+        float:left;
+        margin-left:10px;
+        padding:0 20px;
+        background:$LABEL_BACKGROUND;
+        color:$BLUE;
+        border:2px solid transparent;
+        &:hover{
+          cursor:default;
+          border:2px solid $ORANGE;
+        }
+      }
+    }
+  }
+
+  .work-with{
+     text-align: center;
+    .h2-title{
+      text-align:left;
+    }
+    .profile-photos {
+
+      display:inline-block;
+
+      margin:0 auto;
+
+      padding:20px;
+      background:#CECECE;
+      ul {
+        padding:0;
+        margin:0;
+        background: #CECECE;
+        list-style:none;
+        li{
+          float: left;
+        }
+        li:not(:first-child){
+
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+.btn{
+  background:$BLUE_SOFT;
+  border-bottom:2px solid rgba(0,0,0,0.3);
+  color:$BLUE;
+  font-size:20px;
+  font-weight: bold;
+  border-radius: 0;
+  padding:10px;
+  text-shadow: 1px 1px 1px $BLUE_SOFT;
+
+
+  &:hover{
+      border-bottom:2px solid black;
+    color:$BLUE;
+
+  }
+
+  &:active, &:focus{
+    border-bottom:2px solid transparent;
+  }
+}
+
+.logo{
+  content:url('http://www.cloudtran.com/partnerLogos/gigaspaces.jpg');
+  height:50px;
+}
+
+.footer{
+  padding:50px;
+}
